@@ -96,6 +96,8 @@
         .jumbotron{
             background-image: url("assets/ultrawide-music.jpg");
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             min-height: 25vh;
             min-width: 68vw;
         }
@@ -146,7 +148,7 @@
 }
 
 .shadow-lg{
-    transition: 3s;
+    transition: 1s;
 }
 
 .shadow-lg:hover{
@@ -435,47 +437,6 @@ This navigation bar must be linked to every section in your page
                 <td>3:43</td>
                 <td class="hide">Delete me <button class="del btn-danger btn-sm">x</button></td>
          
-              </tr>
-              <tr class="del">
-                <th scope="row">16</th>
-                <td>Mark</td>
-                <td>3:43</td>
-                <td class="hide">Delete me <button class="del btn-danger btn-sm">x</button></td>
-      
-              </tr>
-              <tr class="del">
-                <th scope="row">17</th>
-                <td>Jacob</td>
-                <td>3:43</td>
-                <td class="hide">Delete me <button class="del btn-danger btn-sm">x</button></td>
-           
-              </tr>
-              <tr class="del">
-                <th scope="row">18</th>
-                <td>Without Me</td>
-                <td>3:43</td>
-                <td class="hide">Delete me <button class="del btn-danger btn-sm">x</button></td>
-         
-              </tr>
-              <tr class="del">
-                <th scope="row">19</th>
-                <td>Without Me</td>
-                <td>3:43</td>
-                <td class="hide">Delete me <button class="del btn-danger btn-sm">x</button></td>
-      
-              </tr>
-              <tr class="del">
-                <th scope="row">20</th>
-                <td>Without Me</td>
-                <td>3:43</td>
-                <td class="hide">Delete me <button class="del btn-danger btn-sm">x</button></td>
-           
-              </tr>
-              <tr class="del">
-                <th scope="row">21</th>
-                <td>Without Me</td>
-                <td>3:43</td>
-                <td class="hide">Delete me <button class="del btn-danger btn-sm"> x </button></td>
          
               </tr>
             </tbody>
@@ -489,7 +450,7 @@ This navigation bar must be linked to every section in your page
     -->
 
 
-    <input class="shadow-lg btn btn-success" data-toggle="modal" data-target="#exampleModal" type="button" value="Add track">
+    <input class="shadow-lg btn btn-success m-5" data-toggle="modal" data-target="#exampleModal" type="button" value="Add track">
 
 
     <!--D9 EXERCISE 7
@@ -507,25 +468,32 @@ This navigation bar must be linked to every section in your page
 
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content text-dark">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Add track</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-          ...
+        <div class="modal-body input-group">
+            <div class="input-group-prepend row">
+                <div class="col-6">
+            <div><input type="text" placeholder="Track number"></div>
+            <div><input type="text" placeholder="Track title"></div>
+        </div>
+        <div class="col-6">
+            <div><input type="text" placeholder="track duaration"></div>
+        </div>
+        </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
 
 
@@ -541,7 +509,7 @@ In this section you should have:
 - 3 albums per row when you are on a tablet (or a smaller window)
 - 2 albums per row when you are on a small screen
 -->
-
+<!-- 
         <section id="fav-albums">
             <div class="container">
                 <div class="row py-5">
@@ -631,7 +599,7 @@ Pick one of your fav albums, and create a section with:
 - ... And whatever you think it's interesting about it!
 -->
 
-        <hr>
+        <!-- <hr>
 
         <section id="best-album-ever">
             <div class="container py-5">
@@ -649,7 +617,7 @@ Pick one of your fav albums, and create a section with:
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
@@ -660,7 +628,7 @@ in this "hall of shame" chart!
 -->
 
 
-        <section id="wall-of-shame">
+        <!-- <section id="wall-of-shame">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -689,7 +657,7 @@ in this "hall of shame" chart!
                     </div>
                 </div>
             </div>    
-        </section>
+        </section> -->
 
 
 
@@ -698,7 +666,7 @@ Do you have any musician / band you admire or you are fan of?
 This section is dedicated to him / her / them!
 Feel free to experiment in this part of the page.
 -->
-
+<!-- 
 
         <section id="favourite-artist">
             <div class="container-fluid">
@@ -748,7 +716,7 @@ Feel free to experiment in this part of the page.
 
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
@@ -758,7 +726,7 @@ Just covers!
 Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
 Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
 -->
-
+<!-- 
     <section id="tapestry">
         
         <div class="container">
@@ -792,7 +760,7 @@ Put at least 20 covers (also repeated) to have a nice effect and see how Bootstr
             </div>
         </div>
             
-    </section>
+    </section> --> -->
 
 
         <!-- EXTRA:
@@ -810,8 +778,7 @@ Add in the footer a field that counts, on page load, how many ALBUMS are on the 
 -->
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+       
 <script>
     const deleteButtons = document.querySelectorAll('.del'); // will give you an array of buttons
 
@@ -823,6 +790,10 @@ function removeMe() {
    this.closest('tr').remove(); // this is the button, from there you want to move up in DOM and find the closes <li> to remove
 }
 </script>
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
 
     </body>
 </html>
